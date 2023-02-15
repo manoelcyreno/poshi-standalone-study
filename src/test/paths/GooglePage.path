@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>GooglePage</title>
+</head>
+
+<body>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Modal</td></tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>SEARCH_FIELD</td>
+	<td>//*[@name='q']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE</td>
+	<td>//*[contains(@href,'liferay')]</td>
+	<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

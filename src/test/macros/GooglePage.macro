@@ -1,0 +1,19 @@
+definition {
+    
+    macro clickOnTheFirstResultWithLiferayOnTheTittle {
+        Click(locator1 = "GooglePage#SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE");
+    }
+
+    macro searchFor {
+        Click(locator1 = "GooglePage#SEARCH_FIELD");
+
+        Type(
+            locator1 = "GooglePage#SEARCH_FIELD",
+            value1 = ${searchTerm});
+
+        KeyPress(
+            locator1 = "GooglePage#SEARCH_FIELD",
+            value1 = "\RETURN");
+    }
+
+}

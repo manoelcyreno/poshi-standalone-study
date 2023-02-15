@@ -1,0 +1,27 @@
+definition {
+	
+	setUp {
+		task ("Go to google site") {
+			Navigator.openURL();
+            Navigator.openSpecificURL(url = "http://www.google.com");
+		}
+	}
+
+	tearDown {
+        //nothing
+	}
+
+	@description = "Testing a google search"
+	@priority = 5
+	test ValidateGoogleSearchWithSuccess {
+		property portal.acceptance = "true";
+
+		task ("Search for Liferay and click on the first result") {
+			GooglePage.searchFor(searchTerm = "Liferay");
+			GooglePage.clickOnTheFirstResultWithLiferayOnTheTittle();
+		}
+
+		task ("Assert that the Liferay page was loaded") {
+            AssertVisible(locator1 = "LiferayPage#LIFERAY_LOGO");
+		}
+	}
