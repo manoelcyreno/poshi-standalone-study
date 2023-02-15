@@ -3,7 +3,7 @@ definition {
 	setUp {
 		task ("Go to google site") {
 			Navigator.openURL();
-            Navigator.openSpecificURL(url = "http://www.google.com");
+            Default.Open(url = "http://www.google.com");
 		}
 	}
 
