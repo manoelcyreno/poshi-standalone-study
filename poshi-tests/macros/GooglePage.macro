@@ -1,5 +1,9 @@
 definition {
 
+	macro clickOnAcceptAllCookies {
+		Default.Click(locator1 = "GooglePage#ACCEPT_ALL_ES");
+	}
+
 	macro clickOnTheFirstResultWithLiferayOnTheTittle {
 		Default.Click(locator1 = "GooglePage#SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE");
 	}

@@ -6,7 +6,7 @@
 <body>
 <table border="1" cellpadding="1" cellspacing="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Modal</td></tr>
+<tr><td rowspan="1" colspan="3">GooglePage</td></tr>
 </thead>
 
 <tbody>
@@ -18,6 +18,11 @@
 <tr>
 	<td>SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE</td>
 	<td>//*[contains(@href,'liferay')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ACCEPT_ALL_ES</td>
+	<td>//*[contains(text(),'Aceptar todo')]</td>
 	<td></td>
 </tr>
 </tbody>

@@ -2,19 +2,17 @@ definition {
 	
 	setUp {
 		task ("Go to google site") {
-			Navigator.openURL();
-            Default.Open(url = "http://www.google.com");
+            Default.Open(locator1 = "http://www.google.com");
+
+			Default.WaitForPageLoad();
+
+			GooglePage.clickOnAcceptAllCookies();
 		}
 	}
 
-	tearDown {
-        //nothing
-	}
-
 	@description = "Testing a google search"
-	@priority = "5"
 	test ValidateGoogleSearchWithSuccess {
-		property portal.acceptance = "true";
+		property portal.acceptance = "true";		
 
 		task ("Search for Liferay and click on the first result") {
 			GooglePage.searchFor(searchTerm = "Liferay");
@@ -22,7 +20,7 @@ definition {
 		}
 
 		task ("Assert that the Liferay page was loaded") {
-            AssertVisible(locator1 = "LiferayPage#LIFERAY_LOGO");
+            Default.AssertElementPresent(locator1 = "LiferayPage#LIFERAY_LOGO");
 		}
 	}
 }
