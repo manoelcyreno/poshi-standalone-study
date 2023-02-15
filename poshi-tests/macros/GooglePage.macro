@@ -1,19 +1,19 @@
 definition {
-    
-    macro clickOnTheFirstResultWithLiferayOnTheTittle {
-        Default.Click(locator1 = "GooglePage#SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE");
-    }
 
-    macro searchFor {
-        Default.Click(locator1 = "GooglePage#SEARCH_FIELD");
+	macro clickOnTheFirstResultWithLiferayOnTheTittle {
+		Default.Click(locator1 = "GooglePage#SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE");
+	}
 
-        Default.Type(
-            locator1 = "GooglePage#SEARCH_FIELD",
-            value1 = "${searchTerm}");
+	macro searchFor {
+		Default.Click(locator1 = "GooglePage#SEARCH_FIELD");
 
-        Default.KeyPress(
-            locator1 = "GooglePage#SEARCH_FIELD",
-            value1 = "\RETURN");
-    }
+		Default.Type(
+			locator1 = "GooglePage#SEARCH_FIELD",
+			value1 = ${searchTerm});
+
+		Default.KeyPress(
+			locator1 = "GooglePage#SEARCH_FIELD",
+			value1 = "\RETURN");
+	}
 
 }
