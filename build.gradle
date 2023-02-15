@@ -13,3 +13,7 @@ buildscript {
 }
 
 apply plugin: "com.liferay.poshi.defaults"
+
+poshiRunner {
+    version = "1.0.403"
+}
