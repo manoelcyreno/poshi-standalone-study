@@ -12,7 +12,7 @@ definition {
 	}
 
 	@description = "Testing a google search"
-	@priority = 5
+	@priority = "5"
 	test ValidateGoogleSearchWithSuccess {
 		property portal.acceptance = "true";
 
