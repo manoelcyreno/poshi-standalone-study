@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.liferay.poshi.runner.PoshiRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-15T11:54:50" hostname="fedora" time="0.0">
+<testsuite name="com.liferay.poshi.runner.PoshiRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-15T12:35:26" hostname="fedora" time="0.002">
   <properties/>
-  <testcase name="initializationError" classname="com.liferay.poshi.runner.PoshiRunner" time="0.0">
+  <testcase name="initializationError" classname="com.liferay.poshi.runner.PoshiRunner" time="0.002">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.liferay.poshi.runner.PoshiRunner.getList(PoshiRunner.java:135)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -97,14 +97,14 @@ timeout.explicit.wait=60
 timeout.implicit.wait=3
 
 Start reading Poshi files.
-Completed reading Poshi files in 582ms.
+Completed reading Poshi files in 528ms.
 Start poshi validation.
 Completed poshi validation in 3ms.
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-feb 15, 2023 12:54:50 PM com.liferay.poshi.core.PoshiValidation validateDeprecatedFunction
+feb 15, 2023 1:35:26 PM com.liferay.poshi.core.PoshiValidation validateDeprecatedFunction
 ADVERTENCIA: Deprecated method "selenium.antCommand" should be replaced with "AntCommands.runCommand" at:
 file:///home/manoelcyreno/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.poshi.runner.resources/1.0.14/45c037f5bd1aa8655fb049eb3136be852f6d24e8/com.liferay.poshi.runner.resources-1.0.14.jar!/default/testFunctional/functions/AntCommand.function:6
 ]]></system-err>

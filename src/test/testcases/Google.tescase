@@ -25,3 +25,4 @@ definition {
             AssertVisible(locator1 = "LiferayPage#LIFERAY_LOGO");
 		}
 	}
+}

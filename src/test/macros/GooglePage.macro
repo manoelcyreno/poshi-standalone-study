@@ -1,17 +1,17 @@
 definition {
     
     macro clickOnTheFirstResultWithLiferayOnTheTittle {
-        Click(locator1 = "GooglePage#SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE");
+        Default.Click(locator1 = "GooglePage#SEARCH_FIRST_RESULT_WITH_LIFERAY_TITTLE");
     }
 
     macro searchFor {
-        Click(locator1 = "GooglePage#SEARCH_FIELD");
+        Default.Click(locator1 = "GooglePage#SEARCH_FIELD");
 
-        Type(
+        Default.Type(
             locator1 = "GooglePage#SEARCH_FIELD",
-            value1 = ${searchTerm});
+            value1 = "${searchTerm}");
 
-        KeyPress(
+        Default.KeyPress(
             locator1 = "GooglePage#SEARCH_FIELD",
             value1 = "\RETURN");
     }
